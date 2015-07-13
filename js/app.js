@@ -23,11 +23,16 @@ $(document).ready(function() {
 
       var data = data.data;
 
-      for(var i = 0; i < 30; i++) {
-        $('.popular').append("<li>" + "<p class='user'> Username: " + "<b>" + data[i].user.full_name + "</b></p>" + "<a target='_blank' href='" + data[i].link +
-        "'><img src='" + data[i].images.low_resolution.url + "'></img></a></li>");
-      }
-      
+      // for(var i = 0; i < 30; i++) {
+      //   $('.popular').append("<li>" + "<p class='user'> Username: " + "<b>" + data[i].user.full_name + "</b></p>" + "<a target='_blank' href='" + data[i].link +
+      //   "'><img src='" + data[i].images.low_resolution.url + "'></img></a></li>");
+      // }
+      $.each(data, function(i, val){
+        if (val.type == video){
+          $('.popular').append("<li>" + "<p class='user'> Username: " + "<b>" + val.user.full_name + "</b></p>" + "<a target='_blank' href='" + val.link +
+        "'><video src='" + val.videos.standard_resolution.url + "'></video></a></li>");
+        }
+      })
 
 
    //      $('#submit').click(function() {
