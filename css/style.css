@@ -113,6 +113,12 @@ p {
 .hide {
   display:none;
 }
+/* recommended size by Instagram  is 640 x 640*/
+.vid {
+	width: 360px;
+	height: 360px;
+	margin: 0 auto;
+}
 
 
 

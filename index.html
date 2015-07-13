@@ -4,35 +4,38 @@
 	<meta charset="UTF-8">
 	<title>WeVideo</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="header">
 		<h1> WE_VIDEO <i class="fa fa-male fa-2x"></i></h1>
- 
+
 	<form class="getVideos" onsubmit='return false;'>
 	<input type='text' name="videos" id='searchVideos'  placeholder="#search...">
-	<input id='submit' type="submit" 
+	<input id='submit' type="submit"
 	value="submit">
 </form>
 	</div>
 
-	<h1>Most Popular Videos</h1>
+	<h1>Most Popular Videos<br>
+	    <button class="btn btn-primary" id="next">Next Page</button>
+	</h1>
+
 <ul class="popular">
 </ul>
 
 <span class="name"></span>
 <span class=tagline></span>
 
-<!-- 	<div class="topVideos1"> 
+<!-- 	<div class="topVideos1">
    </div>
-   <div class="topVideos2"> 
+   <div class="topVideos2">
    </div>
-   <div class="topVideos3"> 
+   <div class="topVideos3">
    </div>
-   <div class="topVideos4"> 
+   <div class="topVideos4">
    </div>
    <div id="results" class="hide"> </div> -->
 <div class="searchResults">
