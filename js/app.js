@@ -28,7 +28,7 @@ $(document).ready(function() {
       //   "'><img src='" + data[i].images.low_resolution.url + "'></img></a></li>");
       // }
       $.each(data, function(i, val){
-        if (val.type == video){
+        if (val.type == "video"){
           $('.popular').append("<li>" + "<p class='user'> Username: " + "<b>" + val.user.full_name + "</b></p>" + "<a target='_blank' href='" + val.link +
         "'><video src='" + val.videos.standard_resolution.url + "'></video></a></li>");
         }
