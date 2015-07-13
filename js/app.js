@@ -30,7 +30,7 @@ $(document).ready(function() {
       $.each(data, function(i, val){
         if (val.type == "video"){
           $('.popular').append("<li>" + "<p class='user'> Username: " + "<b>" + val.user.full_name + "</b></p>" + "<a target='_blank' href='" + val.link +
-        "'><video src='" + val.videos.standard_resolution.url + "'></video></a></li>");
+        "'><video src='" + val.videos.standard_resolution.url + "' class='vid' controls></video></a></li>");
         }
       })
 
