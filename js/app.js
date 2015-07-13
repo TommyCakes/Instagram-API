@@ -9,12 +9,10 @@ $(document).ready(function() {
     $('#searchResults').html('');
 
     var video = $(this).find("input[name='videos']").val();
-  });
-
-
-  $.ajax({
+    
+    $.ajax({
     type:"GET",
-    url: "https://api.instagram.com/v1/tags/video/media/recent?access_token=341290126.e6b92ba.ef366927f98e43e2a9fc5b855da43628&max_tag_id=1026669534125882303 " , 
+    url: "https://api.instagram.com/v1/tags/" + video + "/media/recent?access_token=341290126.e6b92ba.ef366927f98e43e2a9fc5b855da43628&max_tag_id=1026669534125882303 " , 
     dataType: 'jsonp',
     limit: 60,
     success: function(data) {
@@ -53,4 +51,8 @@ $(document).ready(function() {
   // });
 }
 })
+  });
+
+
+  
  });
