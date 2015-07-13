@@ -17,7 +17,6 @@ $(document).ready(function() {
     limit: 60,
     success: function(data) {
       console.log(data);
-      console.log(data.data[0].videos.low_resolution.url);
 
       var data = data.data;
 
