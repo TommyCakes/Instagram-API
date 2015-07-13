@@ -9,6 +9,7 @@ $(document).ready(function() {
     $('#searchResults').html('');
 
     var video = $(this).find("input[name='videos']").val();
+    console.log(video)
     
     $.ajax({
     type:"GET",
