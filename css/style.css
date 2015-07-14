@@ -20,7 +20,7 @@ body {
 	text-align:center;
 	margin-bottom:10px;
 	border: 0.2px solid #;
-  	box-shadow: 63px 12px 65px 2px;
+  box-shadow: 63px 12px 65px 2px;
   }
 .fa-male:before {
 	color:grey;
@@ -32,7 +32,7 @@ body {
   width: 406px;
   height: 306px;
   margin-left:30px;
-  margin-bottom:128px;
+  margin-bottom:164px;
   
 }
 .popular {
@@ -53,12 +53,16 @@ h1 {
 }
 .user {
 	 margin-top:30px;
+	 float:right;
+	 margin-top: 71px;
+
 }
 img {
   width: 400px;
   border-radius: 5px;
   border: 1px solid #DEDEDE;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  float:left;
 }
 
  #searchVideos{
@@ -72,8 +76,31 @@ img {
 	margin-left:10px;
 	height:20px;
 	width:60px;
+  color:grey;
 	
 }
+.picture {
+  height: 50px;
+  width: 50px;
+  margin-left:0px;
+  margin-top: 50px;
+}
+.hide {
+  display:none;
+}
+.vid {
+  width: 360px;
+  height: 360px;
+  margin: 0 auto;
+}
+#next {
+ margin-left:480px;
+ display:inline-block;
+ background:red;
+ 
+ 
+}
+
 /*h3 {
 	margin:30px;
 }
@@ -104,15 +131,7 @@ p {
   padding:0px;
   margin:10px;
 }
-.picture {
-  height: 150px;
-  width: 150px;
-  padding: 20px;
-  margin-left: 100px;
-}*/
-.hide {
-  display:none;
-}
+
 
 
 
